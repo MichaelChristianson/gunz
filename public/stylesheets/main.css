@@ -329,6 +329,118 @@ a:hover {
   }
 }
 
+
+@media screen and (max-width: 360px) {
+
+  .intro {
+    position: absolute;
+    top: 25%; bottom: 0; left: 0; right: 0;
+    transform: translateY(-50%);
+  }
+  .error {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 60px;
+    margin: auto;
+    line-height: 60px;
+
+    animation: noise 2s linear infinite;
+    text-align: center;
+
+    font-size: 50px;
+    font-style: italic;
+  }
+  .error::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    width: 150px;
+    height: 60px;
+    margin: auto;
+
+    content: 'GÜNZ';
+    animation: noise-1 .2s linear infinite;
+    text-align: center;
+
+    opacity: 0;
+    color: blue;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    font-style: italic;
+    line-height: 60px;
+  }
+  .error::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    width: 100px;
+    height: 60px;
+    margin: auto;
+
+    content: 'GÜNZ';
+    animation: noise-2 .2s linear infinite;
+
+    opacity: 0;
+    color: red;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    font-style: italic;
+  }
+  .info {
+    position: absolute;
+    top: 140px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    width: 200px;
+    height: 60px;
+    margin: auto;
+
+    animation: noise-3 1s linear infinite;
+    text-align: center;
+    text-align: center;
+    letter-spacing: 5px;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-style: italic;
+    line-height: 60px;
+  }
+  html {
+    overflow-x: hidden;
+  }
+  .images {
+    padding-top: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 414px) {
 
   .intro {

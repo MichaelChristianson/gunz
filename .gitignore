@@ -10,3 +10,16 @@ npm-debug.log
 # Docker
 Dockerfile
 docker-compose.yml
+
+
+
+
+
+
+
+
+
+
+server.crt
+server.csr
+server.key
