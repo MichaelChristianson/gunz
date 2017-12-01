@@ -49,6 +49,7 @@ html {
 li, a {
   font-size: 25px;
   line-height: 30px;
+  font-family: 'Roboto', sans-serif;
 }
 li {
   list-style: none;
