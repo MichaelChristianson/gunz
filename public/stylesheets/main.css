@@ -46,7 +46,9 @@ html {
   font-family: 'Roboto', sans-serif;
 }
 
-
+li, a {
+  font-size: 15px;
+}
 li {
   list-style: none;
 }
@@ -201,6 +203,7 @@ a:hover {
 .sideBar {
   position: fixed;
   top: 50%;
+
 
   padding: 1em;
 
