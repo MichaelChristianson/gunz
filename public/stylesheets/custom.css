@@ -1,0 +1,585 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+html, body {
+  height: 100%;
+
+  color: white;
+  background: #000 !important;
+}
+
+.error {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: -60px;
+
+  overflow: default;
+
+  width: 100px;
+  height: 60px;
+  margin: auto;
+
+  animation: noise 2s linear infinite;
+  text-align: center;
+  text-align: center;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 95px;
+  font-style: italic;
+  line-height: 60px;
+}
+
+.error:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  width: 150px;
+  height: 60px;
+  margin: auto;
+
+  content: 'GÜNZ';
+  animation: noise-1 .2s linear infinite;
+  text-align: center;
+
+  opacity: 0;
+  color: blue;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 100px;
+  font-style: italic;
+  line-height: 60px;
+}
+
+.info {
+  position: absolute;
+  top: 140px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  width: 200px;
+  height: 60px;
+  margin: auto;
+
+  animation: noise-3 1s linear infinite;
+  text-align: center;
+  /*font-style: italic;*/
+  text-align: center;
+  letter-spacing: .25em;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  line-height: 60px;
+}
+
+.error:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  width: 100px;
+  height: 60px;
+  margin: auto;
+
+  content: 'GÜNZ';
+  animation: noise-2 .2s linear infinite;
+  text-align: center;
+
+  opacity: 0;
+  color: red;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 100px;
+  font-style: italic;
+  line-height: 60px;
+}
+
+.Footer {
+  position: fixed;
+  top: 50%;
+
+  padding: 1em;
+
+  background-image: url("../img/static-video.gif");
+  background-size: auto;
+
+  line-height: 1.5em;
+  /*background: rgba(0, 0, 0, 0.73); /* Fall-back for browsers that don't support rgba */
+  /*background: rgba(0, 0, 0, 0.5);*/
+}
+
+li {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #f6fefd;
+}
+a {
+  transition-duration: 1s;
+  text-decoration: none;
+  letter-spacing: 2px;
+
+  color: #f6fefd !important;
+
+  font-family: 'Roboto', sans-serif;
+}
+div {
+  color: #f6fefd;
+}
+a:hover {
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+  text-decoration: none !important;
+  letter-spacing: .5em;
+}
+.homepageLink {
+  /*background: rgba(0, 0, 0, 0.73); /* Fall-back for browsers that don't support rgba */
+  /*background: rgba(0, 0, 0, 0.5);*/
+  height: 5%;
+  padding-top: 10px;
+
+  text-align: center;
+
+  background-image: url("../img/static-video.gif");
+  background-size: auto;
+}
+
+.static {
+  position: relative;
+  z-index: 230;
+  top: -100px;
+
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+  user-select: none;
+
+  opacity: 0.05;
+
+  user-drag: none;
+}
+
+.images {
+  padding: 0;
+}
+
+
+/*ANIMATIONS*/
+
+@keyframes noise-1 {
+  0%, 20%, 40%, 60%, 70%, 90% {opacity: 0;}
+  10% {opacity: .1;}
+  50% {left: -6px;opacity: .5; }
+  80% {opacity: .3;}
+  100% {left: 2px;opacity: .6; }
+}
+
+@keyframes noise-2 {
+  0%, 20%, 40%, 60%, 70%, 90% {opacity: 0;}
+  10% {opacity: .1;}
+  50% {left: 6px;opacity: .5; }
+  80% {opacity: .3;}
+  100% {left: -2px;opacity: .6; }
+}
+
+@keyframes noise {
+  0%, 3%, 5%, 42%, 44%, 100% {transform: scaleY(1);opacity: 1; }
+  4.3% {transform: scaleY(1.7);opacity: 1; }
+  43% {transform: scaleX(1.5);opacity: 1; }
+}
+
+@keyframes noise-3 {
+  0%,3%,5%,42%,44%,100% {transform: scaleY(1);opacity: 1; }
+  4.3% {transform: scaleY(4);opacity: 1; }
+  43% {transform: scaleX(10) rotate(60deg);opacity: 1; }
+}
+
+
+/*ANIMATIONS*/
+
+
+
+
+
+
+
+
+
+/*MEDIA QUERIES*/
+
+
+
+
+
+/* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    .error{
+      padding-bottom: 20px;
+
+      text-align: center;
+    }
+    .images {
+      padding-top: 20px;
+    }
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    body {
+      overflow-x:hidden;
+
+      background: #000 !important;
+    }
+
+    .error {
+      position: relative;
+
+      overflow: default;
+
+      width: 100%;
+      height: 10px;
+      margin: auto;
+      padding-top: 10%;
+      padding-bottom: 10%;
+      padding-left: 30%;
+
+      animation: noise 2s linear infinite;
+      text-align: center;
+
+      font-family: 'Roboto', sans-serif;
+      font-size: 50px;
+      line-height: 60px;
+    }
+    .error:after {
+    display: none;
+    }
+
+    .error::before {
+    display: none;
+    }
+    .background {
+      display: none;
+    }
+    .info {
+      display: none;
+    }
+    .homepageLink {
+      font-size: 8px;
+    }
+
+    }
+
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+    body {
+      overflow-x:hidden;
+
+      background: #000 !important;
+    }
+
+    .error {
+      position: relative;
+
+      overflow: default;
+
+      width: 100%;
+      height: 10px;
+      margin: auto;
+      padding-top: 10%;
+      padding-bottom: 10%;
+      padding-left: 30%;
+
+      animation: noise 2s linear infinite;
+      text-align: center;
+
+      font-family: 'Roboto', sans-serif;
+      font-size: 50px;
+      line-height: 60px;
+    }
+    .error:after {
+    display: none;
+    }
+
+    .error::before {
+    display: none;
+    }
+    .background {
+      display: none;
+    }
+    .info {
+      /*position: absolute;
+      top: -66%;
+      margin-bottom: 10px;
+      animation: noise-3 1s linear infinite;
+      text-align: center;
+      letter-spacing: .25em;
+
+      font-family: 'Roboto', sans-serif;
+      font-size: 15px;*/
+      display: none;
+    }
+    .homepageLink {
+      font-size: 10px;
+    }
+
+    }
+
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+
+}
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+
+}
+
+
+
+
+@media (max-width: 960px) {
+  body {
+    background: #000 !important;
+  }
+}
+
+@media (max-width: 1024px)  {
+  .background {
+    display: none;
+  }
+  body {
+    overflow-x:hidden;
+
+    background: #000 !important;
+  }
+  .error {
+    position: relative;
+
+    overflow: default;
+
+    width: 100%;
+    height: 10px;
+    margin: auto;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 20%;
+
+    animation: noise 2s linear infinite;
+    text-align: center;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 80px;
+    line-height: 60px;
+  }
+  .error:after {
+  display: none;
+  }
+
+  .error::before {
+  display: none;
+  }
+  .info {
+    position: absolute;
+    top: -66%;
+
+    animation: noise-3 1s linear infinite;
+    text-align: center;
+    letter-spacing: .25em;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+
+  }
+  .homepageLink {
+    font-size: 20px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .background {
+    display: none;
+  }
+  body {
+    overflow-x:hidden;
+
+    background: #000 !important;
+  }
+  .Footer {
+    font-size: 18px;
+  }
+  .error {
+    position: relative;
+
+    overflow: default;
+
+    width: 100%;
+    height: 10px;
+    margin: auto;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 20%;
+
+    animation: noise 2s linear infinite;
+    text-align: center;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 70px;
+    line-height: 60px;
+  }
+  .error:after {
+  display: none;
+  }
+
+  .error::before {
+  display: none;
+  }
+  .info {
+    position: absolute;
+    top: -66%;
+
+    animation: noise-3 1s linear infinite;
+    text-align: center;
+    letter-spacing: .25em;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+
+  }
+  .homepageLink {
+    font-size: 18px;
+  }
+}
+
+
+/*MEDIA QUERIES*/
