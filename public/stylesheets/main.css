@@ -164,10 +164,7 @@ a:hover {
   font-style: italic;
   line-height: 60px;
 }
-iframe {
-  height: auto !important;
-  widows: 100% !important;
-}
+
 
 /*------------------------------------*\
   ANIMATIONS
