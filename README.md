@@ -5,7 +5,9 @@
 A simple web application for [GÜNZ](https://www.instagram.com/gunzinmotion/) to showcase
 his his released music and videos.
 
-A barebones Node.js app using [Express 4](http://expressjs.com/).
+## Built With
+
+Node.js app using [Express 4](http://expressjs.com/).
 
 This application supports the [Getting Started with Node on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs) article - check it out.
 
