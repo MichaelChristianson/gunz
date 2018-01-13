@@ -42,6 +42,19 @@ img {
   width: 100%;
 }
 
+iframe {
+  height: 100%;
+  width: 700px;
+}
+@media screen and (max-width: 320px) {
+  iframe {
+    height: 500px;
+  }
+  img {
+    height: 500px;
+  }
+}
+
 html {
   height: 100%;
 
