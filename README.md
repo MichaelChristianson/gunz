@@ -5,6 +5,10 @@
 A simple web application for [GÜNZ](https://www.instagram.com/gunzinmotion/) to showcase
 his his released music and videos.
 
+## Author
+
+[Michael Christianson](https://github.com/MichaelChristianson).
+
 ## Built With
 
 Node.js app using [Express 4](http://expressjs.com/).
